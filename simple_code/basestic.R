@@ -44,3 +44,5 @@ base_static <- tib_score[,list(Mean=round(mean(英文),2),
                 Min=min(英文),
                 Max=max(英文)),
           by=性別]
+# 分組計算
+aggregate（score，by=list(性別,地區)，mean）
